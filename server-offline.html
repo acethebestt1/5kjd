@@ -1,109 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Syndex Systems</title>
-<link rel="icon" type="image/png" href="/images/logotwo.png">
-<style>
-:root { --cream: #d2c9bb; --muted: #a89f8d; --faint: #6f6a5e; }
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #f2ede1;
-  background: #000;
-  font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
-  background-image: radial-gradient(700px 380px at 50% 30%, rgba(210, 201, 187, .08), transparent 60%),
-    radial-gradient(600px 500px at 12% 85%, rgba(88, 101, 242, .12), transparent 60%),
-    radial-gradient(500px 400px at 88% 78%, rgba(60, 170, 200, .07), transparent 60%);
-  overflow: hidden;
-}
-.sky { position: fixed; inset: 0; overflow: hidden; }
-.star { position: absolute; border-radius: 50%; background: #fff; animation: twinkle 3s infinite ease-in-out; }
-@keyframes twinkle { 0%, 100% { opacity: .15; } 50% { opacity: 1; } }
-.nebula { position: fixed; border-radius: 50%; filter: blur(100px); pointer-events: none; }
-.nebula.one { width: 480px; height: 480px; left: -140px; bottom: -160px; background: rgba(88, 101, 242, .16); }
-.nebula.two { width: 380px; height: 380px; right: -120px; top: -100px; background: rgba(210, 201, 187, .07); }
-.shoot {
-  position: fixed; top: 12%; right: 8%;
-  width: 130px; height: 2px; border-radius: 2px;
-  background: linear-gradient(90deg, #fff, transparent);
-  opacity: 0; animation: shoot 8s infinite ease-out;
-}
-@keyframes shoot {
-  0%, 88% { transform: translateX(0) rotate(-28deg); opacity: 0; }
-  90% { opacity: 1; }
-  96%, 100% { transform: translateX(-42vw) rotate(-28deg); opacity: 0; }
-}
-.wrap { max-width: 520px; padding: 40px 24px; position: relative; z-index: 2; }
-.wrap { max-width: 520px; padding: 40px 24px; position: relative; z-index: 2; }
-.dot {
-  width: 12px; height: 12px; margin: 0 auto 22px; border-radius: 50%;
-  background: #e0a44a; box-shadow: 0 0 18px #e0a44a;
-  animation: pulse 2s infinite;
-}
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
-h1 { margin: 0 0 12px; font-size: clamp(28px, 5vw, 42px); letter-spacing: -1px; font-weight: 800; }
-h1 span {
-  background: linear-gradient(120deg, #e9e0cf, #d2c9bb 60%, #b3a78f);
-  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
-}
-p { margin: 0 0 8px; font-size: 15px; line-height: 1.6; color: var(--muted); }
-.btns { margin-top: 22px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-a.btn {
-  display: inline-block;
-  border-radius: 12px;
-  padding: 12px 24px;
-  font-weight: 800;
-  font-size: 14px;
-  text-decoration: none;
-  transition: transform .12s ease, filter .12s ease;
-}
-a.btn:hover { transform: translateY(-2px); filter: brightness(1.1); }
-a.discord-btn { color: #fff; background: #5865F2; }
-footer { margin-top: 34px; font-size: 12px; color: var(--faint); }
-footer b { color: var(--muted); }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050a12">
+  <meta name="robots" content="noindex, nofollow">
+  <title>5kjd — Temporarily Offline</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+  <style>
+    :root{color-scheme:dark;--bg:#050a12;--panel:#091321;--line:rgba(139,184,229,.16);--text:#e9f3ff;--muted:#91a5bb;--blue:#55b8ff;--blue2:#277bff}
+    *{box-sizing:border-box}
+    html{min-height:100%;background:var(--bg)}
+    body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 30%,#0c2340 0%,#070f1b 38%,#050a12 72%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:linear-gradient(rgba(85,184,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(85,184,255,.055) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    .glow{position:fixed;width:340px;height:340px;border-radius:50%;background:#087cff;filter:blur(120px);opacity:.16;top:-130px;right:-100px;pointer-events:none}
+    .card{position:relative;width:min(100%,560px);padding:clamp(28px,6vw,54px);border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(12,27,45,.94),rgba(5,11,19,.96));box-shadow:0 28px 100px #0008;text-align:center;overflow:hidden}
+    .card:before{content:"";position:absolute;top:0;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,#55b8ff,transparent);box-shadow:0 0 22px #398dff}
+    .logo-wrap{position:relative;width:112px;height:112px;margin:0 auto 25px}
+    .logo-wrap:before{content:"";position:absolute;inset:-8px;border:1px solid #398dff52;border-radius:50%;box-shadow:0 0 32px #087cff20;animation:pulse 3s ease-in-out infinite}
+    .logo{width:100%;height:100%;object-fit:cover;border-radius:50%;border:1px solid #55b8ff80;box-shadow:0 0 36px #087cff35}
+    .eyebrow{margin:0 0 12px;color:var(--blue);font-size:10px;font-weight:800;letter-spacing:2.6px}
+    h1{margin:0;font-size:clamp(34px,8vw,49px);line-height:1.08;letter-spacing:-1.9px;font-weight:750}
+    h1 span{display:block;color:#80caff}
+    .message{max-width:370px;margin:19px auto 0;color:var(--muted);font-size:14px;line-height:1.8}
+    .status{display:inline-flex;align-items:center;gap:9px;margin-top:27px;padding:9px 13px;border:1px solid #ffbd6950;border-radius:999px;background:#3c29181c;color:#f1c58b;font-size:11px;letter-spacing:.35px}
+    .status-dot{width:7px;height:7px;border-radius:50%;background:#ffb65e;box-shadow:0 0 12px #ffb65e;animation:blink 1.8s infinite}
+    .divider{height:1px;background:var(--line);margin:29px 0 18px}
+    .bottom{display:flex;justify-content:space-between;gap:12px;color:#657e99;font-size:10px;letter-spacing:.8px;text-transform:uppercase}
+    .bottom strong{color:#9db6d1;font-weight:600}
+    .signal{display:inline-flex;gap:4px;align-items:end;height:13px;margin-right:7px}
+    .signal i{display:block;width:3px;border-radius:2px;background:#2c5278;height:5px}
+    .signal i:nth-child(2){height:8px}.signal i:nth-child(3){height:11px}.signal i:nth-child(4){height:7px;background:#f0b76f}
+    @keyframes pulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.06);opacity:1}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
+    @media(max-width:430px){.card{padding:32px 22px}.logo-wrap{width:96px;height:96px}.bottom{font-size:9px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important}}
+  </style>
 </head>
 <body>
-<div class="sky" id="sky"></div>
-<div class="nebula one"></div>
-<div class="nebula two"></div>
-<div class="shoot"></div>
-<div class="wrap">
-  <div class="dot"></div>
-  <h1>Give us a minute.</h1>
-  <p>Syndex is down for a moment, usually just a quick restart. Nothing of yours is going anywhere. Dashboards and bots pick up right where they left off.</p>
-
-  <div class="btns">
-    <a class="btn discord-btn" href="https://discord.gg/syndex" target="_blank" rel="noopener">Join our Discord</a>
-  </div> 
-  <footer>Made by <a href="https://discord.gg/syndex" target="_blank" rel="noopener" style="color: #b3a78f;">Syndex Systems</a> — Roleplay bots you can trust. - This site is being hosted by <a href="https://discord.com/users/987028446137962496" target="_blank" rel="noopener" style="color: #b3a78f;">5kjd </a></footer>
-</footer>
-</div>
-<script>
-(function(){
-  var sky = document.getElementById('sky');
-  for(var i = 0; i < 130; i++){
-    var s = document.createElement('span');
-    s.className = 'star';
-    var big = Math.random() < 0.12;
-    var size = big ? 3 : (Math.random() < 0.5 ? 1 : 2);
-    s.style.width = size + 'px';
-    s.style.height = size + 'px';
-    s.style.left = (Math.random() * 100) + 'vw';
-    s.style.top = (Math.random() * 100) + 'vh';
-    if(Math.random() < 0.2) s.style.background = '#d2c9bb';
-    s.style.animationDuration = (2 + Math.random() * 4) + 's';
-    s.style.animationDelay = (Math.random() * 5) + 's';
-    sky.appendChild(s);
-  }
-})();
-</script>
+  <div class="glow"></div>
+  <main class="card">
+    <div class="logo-wrap"><img class="logo" src="images/logo.png" alt="5kjd logo"></div>
+    <p class="eyebrow">5KJD SYSTEM STATUS</p>
+    <h1>Currently <span>offline.</span></h1>
+    <p class="message">The server can't be reached right now. It may be restarting or undergoing maintenance. Please check back in a little while.</p>
+    <div class="status"><span class="status-dot"></span> Connection unavailable</div>
+    <div class="divider"></div>
+    <div class="bottom"><span><span class="signal"><i></i><i></i><i></i><i></i></span><strong>5kjd network</strong></span><span>We’ll be back soon</span></div>
+  </main>
 </body>
 </html>
