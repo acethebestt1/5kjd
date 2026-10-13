@@ -5,7 +5,7 @@ export const config = { runtime: "edge" };
 // ==========================================
 
 // Change this to whatever subpath your backend uses (e.g. "/web2", "/syndex", "")
-const SUBPATH = "/syndex";
+const SUBPATH = "/5kjd";
 
 // true = send visitor logs to Discord
 // false = disable ALL visitor logging
